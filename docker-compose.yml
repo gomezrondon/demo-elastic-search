@@ -1,0 +1,14 @@
+version: '2.1'
+
+services:
+  es:
+    container_name: elastic-search
+    image: docker.elastic.co/elasticsearch/elasticsearch:6.0.1
+    environment:
+      - discovery.type=single-node
+    ports:
+      - 9300:9300
+    volumes:
+      - esdata1:/var/lib/elasticsearch/data
+volumes:
+  esdata1:
