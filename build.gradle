@@ -26,5 +26,6 @@ repositories {
 
 dependencies {
 	implementation('org.springframework.boot:spring-boot-starter-data-elasticsearch')
+	compile group: 'io.projectreactor', name: 'reactor-core', version: '3.2.1.RELEASE'
 	testImplementation('org.springframework.boot:spring-boot-starter-test')
 }
